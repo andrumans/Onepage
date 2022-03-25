@@ -1,0 +1,195 @@
+html {
+    scroll-behavior: smooth;
+    --nav-pad: 25vw;
+    --col-green: #aaf25d;
+    --col-grey: #c3c6c5;
+    --col-dark: #808080;
+    --col-darker: #404040;
+    --ionicon-stoke-width: 42px;
+    font-family: Monospace;
+}
+
+body {
+    margin: 0;
+}
+
+#ballin{
+    width: 700px;
+    height: 700px;
+}
+nav {
+    position: fixed;
+    background-color: var(--col-dark);
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: var(--nav-pad);
+    width: 100%;
+    font-size: 20px;
+}
+
+nav.bottom {
+    bottom: 0;
+}
+
+nav a {
+    color: var(--col-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100000;
+    flex-grow: 1;
+    text-decoration: none;
+}
+
+nav a>ion-icon {
+    color: var(--col-dark);
+    background-color: var(--col-green);
+    border-radius: 50%;
+    padding: .5rem;
+    margin: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+    html {
+        color: black;
+    }
+}
+
+nav a.active {
+    color: var(--col-darker);
+    background-color: var(--col-green);
+}
+
+nav a.active>ion-icon {
+    color: var(--col-green);
+    background-color: var(--col-dark);
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--col-dark);
+    background-color: var(--col-grey);
+}
+
+nav a:hover>ion-icon,
+nav a:focus>ion-icon {
+    color: var(--col-grey);
+    background-color: var(--col-dark);
+}
+
+nav:not(.bottom)+main {
+    padding-top: var(--nav-pad);
+}
+
+main {
+    background-color: var(--col-grey);
+}
+
+main>article {
+    outline: solid 1px red;
+    margin: 0;
+    padding: 2vw;
+    min-height: 120vh;
+    height: auto;
+
+}
+
+main>article:nth-child(odd) {
+    background-color: var(--col-green);
+}
+
+main>article:nth-child(even) {
+    background-color: var(--col-grey);
+}
+
+article h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+article h1{
+    font-size: 40px;
+}
+
+table{
+    align-content: center;
+    font-size: 2vh;
+    font-style: italic;
+    border-bottom: solid 2px var(--col-darker);
+    color: black;
+}
+
+table{
+    float-displace: block;
+}
+
+table tr:nth-child(odd) {
+    background-color: #4d4646;
+}
+
+table tr:nth-child(even) {
+    background-color: #9c8f8f;
+}
+
+table td {
+    padding: 1vh .1vw;
+}
+
+td:nth-child(1) {
+    font-size: 2vh;
+    font-style: italic;
+    font-weight: 800;
+    text-align: center;
+    width: 5vw;
+}
+
+td:nth-child(2) {
+    width: 30vw;
+}
+
+td:nth-child(3) {}
+
+td:nth-child(4) {
+    font-size: 3vh;
+    font-family: Georgia;
+    text-align: center;
+    width: 5vw;
+}
+
+.kolumna2 {
+    column-width: 20px;
+    column-count: 6;
+    column-gap: 20px;
+    column-rule: solid 20px orange;
+    column-span: all;
+    column-fill: auto
+}
+
+footer {
+    color: var(--col-green);
+    background-color: var(--col-dark);
+    font-weight: 800;
+    text-align: center;
+}
+
+footer P {
+    margin: 0;
+}
+
+
+#qr{
+    height: 500px;
+    width: 500px;
+}
+
+#contact{
+    display: flex;
+}
+
+#about{
+    padding-bottom: auto;
+}
+
