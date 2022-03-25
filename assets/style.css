@@ -26,6 +26,7 @@ nav {
     height: var(--nav-pad);
     width: 100%;
     font-size: 20px;
+    z-index: 100;
 }
 
 nav.bottom {
@@ -114,7 +115,7 @@ article h1{
     font-size: 40px;
 }
 
-table{
+table {
     align-content: center;
     font-size: 2vh;
     font-style: italic;
