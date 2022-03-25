@@ -120,6 +120,8 @@ table{
     font-style: italic;
     border-bottom: solid 2px var(--col-darker);
     color: black;
+    position: relative;
+    left: 20%;
 }
 
 table{
