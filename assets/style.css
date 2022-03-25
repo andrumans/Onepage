@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    --nav-pad: 25vw;
+    --nav-pad: 20vh;
     --col-green: #aaf25d;
     --col-grey: #c3c6c5;
     --col-dark: #808080;
