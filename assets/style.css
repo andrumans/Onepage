@@ -13,10 +13,7 @@ body {
     margin: 0;
 }
 
-#ballin{
-    width: 700px;
-    height: 700px;
-}
+
 nav {
     position: fixed;
     background-color: var(--col-dark);
@@ -184,7 +181,7 @@ footer P {
 
 #qr{
     height: 500px;
-    width: 100%;
+    width: auto;
 }
 
 #contact{
